@@ -1,0 +1,20 @@
+<h3>Create Room</h3>
+<form (ngSubmit)="onSubmit()" class="col s12">
+  <div class="input-field col s12">
+    <input placeholder="Room Name" id="room_name" type="text" class="validate" required ([(ngModel)]="room.name")>
+    <label for="room_name">Room Name</label>
+  </div>
+  <div class="input-field col s6">
+    <input placeholder="Date" id="date" type="text" class="validate" required ([(ngModel)]="room.date")>
+    <label for="date">Room Date</label>
+  </div>
+  <div class="input-field col s6">
+    <input placeholder="Start Hour" id="start_hour" type="text" class="validate" required ([(ngModel)]="room.startHour")>
+    <label for="start_hour">Start Hour</label>
+  </div>
+  <div class="input-field col s6">
+    <input placeholder="End Hour" id="end_hour" type="text" class="validate" required ([(ngModel)]="room.endHour")>
+    <label for="end_hour">End Hour</label>
+  </div>
+  <button class="btn" type="submit">Submit</button>
+</form>
